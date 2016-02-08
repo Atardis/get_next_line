@@ -10,4 +10,12 @@
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "get_next_line.h"
 
+int     get_next_line(int const fd, char **line)
+{
+	char *str;
+
+	if ((read_result = read(fd, buff, BUFF_SIZE)) == -1)
+		return (-1);
+}
